@@ -12,9 +12,9 @@ class CompaniesRouter {
     const companiesRoutes = Router();
 
     companiesRoutes.post("/createOneCompany", createOneCompany);
-    //companiesRoutes.get("/getAllCompanies", getAllCompanies);
-    //companiesRoutes.get("/getOneCompany/:id", getOneCompany);
-    //companiesRoutes.put("/updateOneCompany/:id", updateOneCompany);
+    companiesRoutes.get("/getAllCompanies", getAllCompanies);
+    companiesRoutes.get("/getOneCompany/:id", getOneCompany);
+    companiesRoutes.put("/updateOneCompany/:id", updateOneCompany);
     //companiesRoutes.delete("/deleteOneCompany/:id", deleteOneCompany);
 
     return companiesRoutes;
