@@ -9,7 +9,7 @@ class CategoryRouter {
   routesFromCategory() {
     const categoryRoutes = Router();
 
-    categoryRoutes.post("/createOneCategory", createOneCategory);
+    categoryRoutes.post("/createOneCategory", auth, createOneCategory);
     categoryRoutes.get("/getOneCategory/:id", auth, getOneCategory);
 
     return categoryRoutes;

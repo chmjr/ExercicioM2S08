@@ -12,6 +12,7 @@ class UsersRouter {
     usersRoutes.post("/createOneUser", createOneUser);
     usersRoutes.get("/getAllUsers", getAllUsers);
     usersRoutes.get("/getOneUser", getOneUser);
+    usersRoutes.get("/login", getOneUser);
     //usersRoutes.put("/updateOneUsers", updateOneUser);
     //usersRoutes.delete("/deleteOneUsers", deleteOneUser);
 

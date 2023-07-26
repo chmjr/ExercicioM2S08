@@ -41,7 +41,9 @@ class UsersController {
         // Comparar a senha fornecida com a senha armazenada no banco de dados
         if (senha === user.password) {
           //compara se a senha fornecida é igual a senha armazenada no banco de dados
-          const token = sign({ user }, process.env.SECRET_JWT, {expiresIn: 1d}); //gera o token
+          const token = sign({ user }, process.env.SECRET_JWT, {
+            expiresIn: "1d",
+          }); //gera o token
           return res
             .status(200)
             .send({ msg: "Logado com sucesso!", id: user.id, token }); //retorna o objeto todo
